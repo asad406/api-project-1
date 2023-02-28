@@ -16,16 +16,24 @@
     <main class="container">
         <section>
             <div class="mb-3">
-                
-                <input id="search-field"  class="form-control" placeholder="Search your phone">
+
+                <input id="search-field" class="form-control" placeholder="Search your phone">
                 <div id="btn-search" class="btn btn-primary mt-2">Search</div>
-              </div>
+            </div>
         </section>
         <section>
             <div id="phones-container" class="row row-cols-1 row-cols-md-3 g-4">
             </div>
             <div id="no-found-message" class="mt-4 d-none">
                 <h3 class="text-warning">No phone Found. Please try again.</h3>
+            </div>
+        </section>
+        <!-- search loading  -->
+        <section id="loader" class="d-none">
+            <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
         </section>
     </main>
